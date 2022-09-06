@@ -71,13 +71,58 @@ public class Index {
 			}
 		}
 		
+		
+		// ----------------------------------
+		
+		Carro carroAntigo = listaCarros[0];
+		
+		for(int i = 0; i < listaCarros.length; i++) {
+			if(listaCarros[i].getAno() < carroAntigo.getAno()) {
+				carroAntigo = listaCarros[i];
+			}
+		}
+		
+		Moto motoAntiga = listaMotos[0];
+		
+		for(int i = 0; i < listaMotos.length; i++) {
+			if(listaMotos[i].getAno() < motoAntiga.getAno()) {
+				moto = listaMotos[i];
+			}
+		}
+		
+		
+		Caminhao caminhaoAntigo = listaCaminhao[0];
+		
+		for(int i = 0; i < listaMotos.length; i++) {
+			if(listaCaminhao[i].getAno() < caminhaoAntigo.getAno()) {
+				caminhaoAntigo = listaCaminhao[i];
+			}
+		}
+		
+		
+		if(caminhaoAntigo.getAno() < carroAntigo.getAno()) {
+			if(caminhaoAntigo.getAno() < motoAntiga.getAno()) {
+				System.out.println("O caminhão é o veiculo mais antigo!");
+				System.out.println(caminhaoAntigo);
+			}else {
+				
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		System.out.println("O carro com a menor potência é:" + carro.getModelo());
+		System.out.println("-------------------------------");
+		System.out.println("A moto de menor cilindrada é:" + moto.getModelo());
+		System.out.println("-------------------------------");
 		System.out.println("O veiculo mais antigo é: " + veiculo.getModelo()+ ".");
 		System.out.println("-------------------------------");
-		System.out.println(c1);
-		System.out.println("-------------------------------");
-		System.out.println(m1);
-		System.out.println("-------------------------------");
-		System.out.println(ca1);
+//		System.out.println(m1);
+//		System.out.println(ca1);
 	}
 
 	
