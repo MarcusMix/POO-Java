@@ -21,11 +21,11 @@ public class Forno_eletrico extends Eletrodomestico  {
 	}
 	
 	public double calcularConsumo() {
-		return (30 * kwDia) * 0.25;
+		return (30 * kwDia) * 1.25;
 	}
 	
 	public double getKwDia() {
-		return  (kwDia * 0.25);
+		return  (kwDia * 1.25);
 	}
 
 }

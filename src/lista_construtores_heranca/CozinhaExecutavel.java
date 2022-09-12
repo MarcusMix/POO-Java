@@ -50,6 +50,9 @@ public class CozinhaExecutavel {
 		
 		System.out.println("O consumo da Cozinha por mes é: " + consumoTotalMes + "Kw.");
 		System.out.println("Consumo da Cozinha em 10 dias é: " + consumoTotal10Dias + "Kw.");
+		System.out.println("Consumo forno 1 mes: " + consumoForno_eletricoMes + "Kw.");
+		System.out.println("Consumo forno 10 dias: " + consumoForno_eletricoDia + "Kw.");
+		
 		
 	}
 
