@@ -3,7 +3,7 @@ package lista_construtores_heranca;
 public class Eletrodomestico {
 	private String modelo;
 	private String fabricante;
-	private int kwDia;
+	protected double kwDia;
 	
 	
 	public Eletrodomestico() {
@@ -11,7 +11,7 @@ public class Eletrodomestico {
 	}
 
 
-	public Eletrodomestico(String modelo, String fabricante, int kwDia) {
+	public Eletrodomestico(String modelo, String fabricante, double kwDia) {
 		super();
 		this.modelo = modelo;
 		this.fabricante = fabricante;
@@ -27,7 +27,7 @@ public class Eletrodomestico {
 		return dia * kwDia;
 	}
 
-	public int getKwDia() {
+	public double getKwDia() {
 		return kwDia;
 	}
 
