@@ -30,6 +30,11 @@ public class MarcusEstoque {
 		this.remedios = remedios;
 	}
 	
+//	
+//	public double qtRemedios () {
+//	double tRemedios = this.getRemedios();
+//		return tRemedios;
+//	}
 	
 	
 }

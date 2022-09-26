@@ -12,6 +12,12 @@ public class MarcusFarmacia  extends MarcusEmpresa {
 		this.estoque = estoque;
 	}
 	
+	public String nomeResponsavel () {
+		String nome = estoque.getResponsavel();
+		return nome;
+	}
+	
+	
 	
 }
  

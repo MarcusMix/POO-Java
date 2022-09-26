@@ -34,6 +34,11 @@ public class MarcusExecutavel {
 		
 		MarcusFarmacia farmacia = new MarcusFarmacia("Farmácia do Senac", "9", endSenac, estoque);
 		
+		System.out.println("Nome responsável: " + farmacia.nomeResponsavel());
+		
+//		double valor = estoque.qtRemedios() * remedio1.preco();
+		
+//		System.out.println("valor1" + valor);
 		
 	}
 

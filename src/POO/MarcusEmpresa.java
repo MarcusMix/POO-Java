@@ -40,5 +40,10 @@ public class MarcusEmpresa  {
 		this.endereco = endereco;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Nome: " + this.getNome() + 
+			   "CNPJ: " + this.getCnpj() +
+			   "Endereço: " + this.getEndereco();
+	}
 }

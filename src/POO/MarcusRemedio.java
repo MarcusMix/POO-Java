@@ -40,7 +40,17 @@ public class MarcusRemedio {
 		this.laboratorio = laboratorio;
 	}
 
+	@Override
+	public String toString() {
+		return "Nome: " + this.getNome() + 
+			   "Preço: " + this.getPreco() + 
+			   "Laboratório: " + this.getLaboratorio();
+	}
 	
+	
+	public double preco () {
+		return this.getPreco();
+	}
 	
 	
 	

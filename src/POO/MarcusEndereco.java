@@ -59,6 +59,16 @@ public class MarcusEndereco {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+
+	@Override
+	public String toString() {
+		return "Rua: " + this.getRua() +
+			   "Número: " + this.getNumero() +
+			   "Bairro: " + this.getBairro() + 
+			   "Cudade: " + this.getCidade() + 
+			   "Estado: " + this.getEstado();
+	}
+	
 	
 	
 	
