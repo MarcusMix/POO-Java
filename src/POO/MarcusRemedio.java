@@ -43,8 +43,8 @@ public class MarcusRemedio {
 	@Override
 	public String toString() {
 		return "Nome: " + this.getNome() + 
-			   "Preço: " + this.getPreco() + 
-			   "Laboratório: " + this.getLaboratorio();
+			   "\nPreço: " + this.getPreco() + 
+			   "\nLaboratório: " + this.getLaboratorio();
 	}
 	
 	

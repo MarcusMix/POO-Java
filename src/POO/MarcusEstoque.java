@@ -29,6 +29,22 @@ public class MarcusEstoque {
 	public void setRemedios(MarcusRemedio[] remedios) {
 		this.remedios = remedios;
 	}
+
+	public void identificarResponsavel() {
+		System.out.println("O responsável pela farmácia é: " + this.getResponsavel());
+		
+	}
+
+	public void calcularEstoque() {
+		double total = 0;
+		for(int i = 0; i < this.getRemedios().length; i++) {
+			total += this.getRemedios()[i].getPreco();
+		}
+		
+		System.out.println("Total do estoque: " + total);
+	}
+
+}
 	
 //	
 //	public double qtRemedios () {
@@ -37,4 +53,4 @@ public class MarcusEstoque {
 //	}
 	
 	
-}
+

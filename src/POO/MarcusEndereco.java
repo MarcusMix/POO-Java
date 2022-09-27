@@ -63,10 +63,10 @@ public class MarcusEndereco {
 	@Override
 	public String toString() {
 		return "Rua: " + this.getRua() +
-			   "Número: " + this.getNumero() +
-			   "Bairro: " + this.getBairro() + 
-			   "Cudade: " + this.getCidade() + 
-			   "Estado: " + this.getEstado();
+			   "\nNúmero: " + this.getNumero() +
+			   "\nBairro: " + this.getBairro() + 
+			   "\nCudade: " + this.getCidade() + 
+			   "\nEstado: " + this.getEstado();
 	}
 	
 	

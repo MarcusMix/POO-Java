@@ -43,7 +43,7 @@ public class MarcusEmpresa  {
 	@Override
 	public String toString() {
 		return "Nome: " + this.getNome() + 
-			   "CNPJ: " + this.getCnpj() +
-			   "Endereço: " + this.getEndereco();
+			   "\nCNPJ: " + this.getCnpj() +
+			   "\nEndereço: " + this.getEndereco();
 	}
 }
