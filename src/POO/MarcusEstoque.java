@@ -43,14 +43,32 @@ public class MarcusEstoque {
 		
 		System.out.println("Total do estoque: " + total);
 	}
+	
+	public void calcularEstoque(String laboratorio) {
+		double total = 0;
+		for(int i = 0; i < this.getRemedios().length; i++) {
+			if(laboratorio.equalsIgnoreCase(this.getRemedios()[i].getLaboratorio().getNome()))
+			total += this.getRemedios()[i].getPreco();
+		}
+		System.out.println("Laboratório: " + laboratorio);
+		System.out.println("Total do estoque: " + total);
+		
+	}
 
+	public MarcusLaboratorio informarDadosLaboratorio(String nome) {
+		MarcusLaboratorio resultado = null;
+		for(int i = 0; i < this.getRemedios().length;i++) {
+			if(this.getRemedios()[i].getLaboratorio().getNome().equalsIgnoreCase(nome)) {
+				resultado = this.getRemedios()[i].getLaboratorio();			
+				}
+		}
+		
+		return resultado;
+	}
+
+	
 }
 	
-//	
-//	public double qtRemedios () {
-//	double tRemedios = this.getRemedios();
-//		return tRemedios;
-//	}
-	
+
 	
 

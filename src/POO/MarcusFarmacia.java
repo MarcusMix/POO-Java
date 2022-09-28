@@ -19,20 +19,39 @@ public class MarcusFarmacia  extends MarcusEmpresa {
 	public void setEstoque(MarcusEstoque estoque) {
 		this.estoque = estoque;
 	}
-
+	
+	
+	// identificar responsável
 	public void identificarResponsavel() {
 		this.getEstoque().identificarResponsavel();
 		
 	}
+	
+	// identificar responsável MANEIRA FÁCIL
+	public void identificarResponsavelEstoque3() {
+		System.out.println("Responsável : " + this.getEstoque().getResponsavel());
+	}
 
-	public  void calculaEstoque() {
+	
+	//calcular estoque
+	public  void calcularEstoque() {
 		this.getEstoque().calcularEstoque();
+		
+	}
+
+	public void calcularEstoque(String laboratorio) {
+		this.getEstoque().calcularEstoque(laboratorio);
+		
+	}
+
+	public MarcusLaboratorio informarDadosLaboratorio(String nome) {
+		return this.getEstoque().informarDadosLaboratorio(nome);
 		
 	}
 
 	
 	
-//	
+	
 //	public String nomeResponsavel () {
 //		String nome = estoque.getResponsavel();
 //		return nome;
