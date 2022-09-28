@@ -1,4 +1,4 @@
-package POO;
+package simulado01;
 
 public class MarcusExecutavel {
 
@@ -23,15 +23,15 @@ public class MarcusExecutavel {
 		MarcusRemedio torsilax = new MarcusRemedio("Torsilax", 15.0, Medley);
 		
 		MarcusRemedio[] listaRemedios = {
-								   rosuvas, rosuvas, rosuvas, rosuvas,
-								   glifage,glifage, glifage,
-								   araDois, araDois,
-								   tandrilax,
-								   rosuvastatina,
-								   lexotan, rosuvastatina,
-								   losartana, losartana, losartana,
-								   torsilax, torsilax, torsilax, torsilax
-								   };
+				rosuvas, rosuvas, rosuvas, rosuvas,
+				glifage,glifage, glifage,
+				araDois, araDois,
+				tandrilax,
+				rosuvastatina,
+				lexotan, rosuvastatina,
+	   		    losartana, losartana, losartana,
+				torsilax, torsilax, torsilax, torsilax
+			 };
 		
 		MarcusEstoque estoque = new MarcusEstoque("Lucinado", listaRemedios);
 		

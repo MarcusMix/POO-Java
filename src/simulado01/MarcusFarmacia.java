@@ -1,4 +1,4 @@
-package POO;
+package simulado01;
 
 public class MarcusFarmacia  extends MarcusEmpresa {
 	private MarcusEstoque estoque;
@@ -46,7 +46,6 @@ public class MarcusFarmacia  extends MarcusEmpresa {
 
 	public MarcusLaboratorio informarDadosLaboratorio(String nome) {
 		return this.getEstoque().informarDadosLaboratorio(nome);
-		
 	}
 	
 }

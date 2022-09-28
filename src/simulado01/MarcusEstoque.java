@@ -1,4 +1,4 @@
-package POO;
+package simulado01;
 
 public class MarcusEstoque {
 	
@@ -48,8 +48,9 @@ public class MarcusEstoque {
 	public void calcularEstoque(String laboratorio) {
 		double total = 0;
 		for(int i = 0; i < this.getRemedios().length; i++) {
-			if(laboratorio.equalsIgnoreCase(this.getRemedios()[i].getLaboratorio().getNome()))
-			total += this.getRemedios()[i].getPreco();
+			if(laboratorio.equalsIgnoreCase(this.getRemedios()[i].getLaboratorio().getNome())) {
+				total += this.getRemedios()[i].getPreco();
+			}
 		}
 		System.out.println("Laboratório: " + laboratorio);
 		System.out.println("Total do estoque: " + total);
@@ -61,7 +62,7 @@ public class MarcusEstoque {
 		for(int i = 0; i < this.getRemedios().length; i++) {
 			if(this.getRemedios()[i].getLaboratorio().getNome().equalsIgnoreCase(nome)) {
 				resultado = this.getRemedios()[i].getLaboratorio();			
-				}
+			}
 		}
 		return resultado;
 	}

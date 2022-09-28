@@ -1,4 +1,4 @@
-package POO;
+package simulado01;
 
 public class MarcusEmpresa  {
 	private String nome;
