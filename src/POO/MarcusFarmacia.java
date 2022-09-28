@@ -48,16 +48,6 @@ public class MarcusFarmacia  extends MarcusEmpresa {
 		return this.getEstoque().informarDadosLaboratorio(nome);
 		
 	}
-
-	
-	
-	
-//	public String nomeResponsavel () {
-//		String nome = estoque.getResponsavel();
-//		return nome;
-//	}
-
-	
 	
 }
  

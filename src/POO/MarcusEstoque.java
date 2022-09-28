@@ -1,6 +1,7 @@
 package POO;
 
 public class MarcusEstoque {
+	
 	private String responsavel;
 	private MarcusRemedio[] remedios;
 	
@@ -57,16 +58,13 @@ public class MarcusEstoque {
 
 	public MarcusLaboratorio informarDadosLaboratorio(String nome) {
 		MarcusLaboratorio resultado = null;
-		for(int i = 0; i < this.getRemedios().length;i++) {
+		for(int i = 0; i < this.getRemedios().length; i++) {
 			if(this.getRemedios()[i].getLaboratorio().getNome().equalsIgnoreCase(nome)) {
 				resultado = this.getRemedios()[i].getLaboratorio();			
 				}
 		}
-		
 		return resultado;
 	}
-
-	
 }
 	
 

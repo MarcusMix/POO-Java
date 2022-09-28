@@ -3,6 +3,7 @@ package POO;
 public class MarcusExecutavel {
 
 	public static void main(String[] args) {
+		
 		MarcusEndereco endLegrand = new MarcusEndereco("Rua dos Remédios", 100, "Centro", "Palhoça", "SC");
 		MarcusLaboratorio Legrand = new MarcusLaboratorio("Legrand", "12.345.678/0001-11", endLegrand);
 
@@ -40,20 +41,20 @@ public class MarcusExecutavel {
 		//3-a
 		farmacia.identificarResponsavel();
 		
-		
 		//3-b
-		System.out.println("-----------------------------------------------------------------");
+		System.out.println("----------------------------");
 		farmacia.calcularEstoque();
 		
 		//3-c
-		System.out.println("-----------------------------------------------------------------");
+		System.out.println("----------------------------");
 		farmacia.calcularEstoque("legrand");
+		System.out.println("----------------------------");
 		farmacia.calcularEstoque("medley");
 		
 		//3-d
-		System.out.println("-----------------------------------------------------------------");
+		System.out.println("----------------------------");
 		System.out.println("Dados do laboratório: " + farmacia.informarDadosLaboratorio("medley"));
-		System.out.println("-----------------------------------------------------------------");
+		System.out.println("----------------------------");
 		System.out.println("Dados do laboratório: " + farmacia.informarDadosLaboratorio("legrand"));
 
 		

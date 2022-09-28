@@ -1,6 +1,7 @@
 package POO;
 
 public class MarcusRemedio {
+	
 	private String nome;
 	private double preco;
 	private MarcusLaboratorio laboratorio;
@@ -46,12 +47,6 @@ public class MarcusRemedio {
 			   "\nPreço: " + this.getPreco() + 
 			   "\nLaboratório: " + this.getLaboratorio();
 	}
-	
-	
-	public double preco () {
-		return this.getPreco();
-	}
-	
 	
 	
 }
