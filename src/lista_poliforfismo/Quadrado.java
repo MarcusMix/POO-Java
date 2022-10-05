@@ -39,4 +39,11 @@ public class Quadrado {
 	public double calcularPerimetro(int lado) {
 		return lado * 4;
 	}
+
+	@Override
+	public String toString() {
+		return "Quadrado [lado=" + lado + ", nome=" + nome + "]";
+	}
+	
+	
 }
