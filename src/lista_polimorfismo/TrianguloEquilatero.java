@@ -1,6 +1,6 @@
 package lista_polimorfismo;
 
-public class TrianguloEquilatero {
+public class TrianguloEquilatero extends Triangulo {
 	private double lado;
 	private String nome;
 	
@@ -30,14 +30,29 @@ public class TrianguloEquilatero {
 		this.nome = nome;
 	}
 	
+	
+	@Override
+	public double calcularPerimetro(double lado) {
+		return lado * 3;
+	}
 
-	public double calcularArea(int lado) {
+	@Override
+	public double calcularArea(double lado) {
 		return lado * lado;
 	}
 	
 	
-	public double calcularPerimetro(double lado) {
-		return lado * 3;
+	@Override
+	public double calcularPerimetro(double ladoA, double ladoB) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
+
+	@Override
+	public double calcularArea(double base, double altura) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	
 }

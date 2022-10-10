@@ -1,15 +1,13 @@
 package lista_polimorfismo;
 
-public class TrianguloRetangulo {
+public class TrianguloRetangulo extends Triangulo {
 	private double base;
 	private double altura;
-	private String nome;
 	
 	public TrianguloRetangulo(double base, double altura, String nome) {
 		super();
 		this.base = base;
 		this.altura = altura;
-		this.nome = nome;
 	}
 
 	public TrianguloRetangulo() {
@@ -32,15 +30,6 @@ public class TrianguloRetangulo {
 		this.altura = altura;
 	}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	
-
 	public double calcularArea(double base, double altura) {
 		return (base * altura) / 2;
 	}
@@ -48,6 +37,18 @@ public class TrianguloRetangulo {
 	
 	public double calcularPerimetro(double raio) {
 		return base + (altura * 2);
+	}
+
+	@Override
+	public double calcularPerimetro(double ladoA, double ladoB) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double calcularArea(double raio) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 }

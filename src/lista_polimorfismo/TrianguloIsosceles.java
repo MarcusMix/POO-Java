@@ -1,15 +1,13 @@
 package lista_polimorfismo;
 
-public class TrianguloIsosceles {
+public class TrianguloIsosceles extends Triangulo {
 	private double base;
 	private double altura;
-	private String nome;
 	
 	public TrianguloIsosceles(double base, double altura, String nome) {
 		super();
 		this.base = base;
 		this.altura = altura;
-		this.nome = nome;
 	}
 	
 	public TrianguloIsosceles() {
@@ -33,20 +31,27 @@ public class TrianguloIsosceles {
 		this.altura = altura;
 	}
 
-	public String getNome() {
-		return nome;
-	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
+	@Override
 	public double calcularArea(double base, double altura) {
 		return (base * altura) / 2;
 	}
-	
-	
-	public double calcularPerimetro(double raio) {
+
+	@Override
+	public double calcularPerimetro(double base, double altura) {
 		return base + (altura * 2);
 	}
+
+	@Override
+	public double calcularArea(double raio) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double calcularPerimetro(double raio) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

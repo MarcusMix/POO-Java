@@ -72,7 +72,7 @@ public class Losango {
 	}
 	
 	
-
+	
 	public double calcularArea(double diagonalMaior, double diagonalMenor) {
 		return (diagonalMaior * diagonalMenor) / 2;
 	}
