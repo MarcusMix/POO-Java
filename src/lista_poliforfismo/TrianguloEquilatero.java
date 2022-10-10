@@ -1,16 +1,16 @@
 package lista_poliforfismo;
 
-public class TrianguloEquilátero {
+public class TrianguloEquilatero {
 	private double lado;
 	private String nome;
 	
-	public TrianguloEquilátero(double lado, String nome) {
+	public TrianguloEquilatero(double lado, String nome) {
 		super();
 		this.lado = lado;
 		this.nome = nome;
 	}
 
-	public TrianguloEquilátero() {
+	public TrianguloEquilatero() {
 		super();
 	}
 
