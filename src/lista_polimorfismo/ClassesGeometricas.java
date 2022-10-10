@@ -1,4 +1,4 @@
-package lista_poliforfismo;
+package lista_polimorfismo;
 
 public abstract class  ClassesGeometricas {
 	private String nome;

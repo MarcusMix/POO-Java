@@ -1,4 +1,4 @@
-package lista_poliforfismo;
+package lista_polimorfismo;
 
 public class Circulo {
 	private double raio;
