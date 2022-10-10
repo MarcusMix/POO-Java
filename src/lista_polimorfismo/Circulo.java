@@ -1,13 +1,11 @@
 package lista_polimorfismo;
 
-public class Circulo {
+public class Circulo extends FormasGeometricas {
 	private double raio;
-	private String nome;
 	
 	public Circulo(double raio, String nome) {
 		super();
 		this.raio = raio;
-		this.nome = nome;
 	}
 
 	public Circulo() {
@@ -22,15 +20,6 @@ public class Circulo {
 		this.raio = raio;
 	}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	
-	
 	
 	public double calcularArea(double raio) {
 		return 3.14 * (raio * 2);

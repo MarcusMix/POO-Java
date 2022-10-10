@@ -78,7 +78,7 @@ public class Losango {
 	}
 	
 	
-	public double calcularPerimetro(int lado) {
+	public double calcularPerimetro(double ladoA, double ladoB) {
 		return  (ladoA * 2) + (ladoB * 2);
 	}
 	

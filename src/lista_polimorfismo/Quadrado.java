@@ -1,49 +1,34 @@
 package lista_polimorfismo;
 
-public class Quadrado {
-	private int lado;
-	private String nome;
+public class Quadrado extends FormasGeometricas{
+	private double lado;
 	
-	public Quadrado(int lado, String nome) {
+	public Quadrado(double lado, String nome) {
 		super();
 		this.lado = lado;
-		this.nome = nome;
 	}
 
 	public Quadrado() {
 		super();
 	}
 
-	public int getLado() {
+	public double getLado() {
 		return lado;
 	}
 
-	public void setLado(int lado) {
+	public void setLado(double lado) {
 		this.lado = lado;
 	}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 	
-	
-	public double calcularArea(int lado) {
+	public double calcularArea(double lado) {
 		return lado * lado;
 	}
 	
 	
-	public double calcularPerimetro(int lado) {
+	public double calcularPerimetro(double lado) {
 		return lado * 4;
 	}
 
-	@Override
-	public String toString() {
-		return "Quadrado [lado=" + lado + ", nome=" + nome + "]";
-	}
-	
 	
 }
