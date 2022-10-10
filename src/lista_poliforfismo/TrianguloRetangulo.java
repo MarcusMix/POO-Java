@@ -1,18 +1,18 @@
 package lista_poliforfismo;
 
-public class Triangulo {
+public class TrianguloRetangulo {
 	private double base;
 	private double altura;
 	private String nome;
 	
-	public Triangulo(double base, double altura, String nome) {
+	public TrianguloRetangulo(double base, double altura, String nome) {
 		super();
 		this.base = base;
 		this.altura = altura;
 		this.nome = nome;
 	}
 
-	public Triangulo() {
+	public TrianguloRetangulo() {
 		super();
 	}
 
