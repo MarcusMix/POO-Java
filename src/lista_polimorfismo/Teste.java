@@ -7,13 +7,13 @@ public class Teste {
 
 	public static void main(String[] args) {
 		
-		FormasGeometricas[] array = new FormasGeometricas[7];
-		Random gerador = new Random();
 		DecimalFormat df = new DecimalFormat("0.00");
+		Random gerador = new Random();
+		FormasGeometricas[] array = new FormasGeometricas[7];
 		
 		
-		for(int i = 0; i > array.length; i++) {
-			int opcao = gerador.nextInt(6);
+		for(int i = 0; i < array.length; i++) {
+			int opcao = gerador.nextInt(7);
 			switch(opcao) {
 				case 0: {
 					Quadrado quadrado = new Quadrado(gerador.nextInt(9)+1, "Quadrado");
