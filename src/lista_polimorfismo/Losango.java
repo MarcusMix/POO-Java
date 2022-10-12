@@ -1,19 +1,18 @@
 package lista_polimorfismo;
 
-public class Losango {
+public class Losango extends FormasGeometricas  {
 	private double ladoA;
 	private double ladoB;
 	private double diagonalMaior;
 	private double diagonalMenor;
-	private String nome;
+
 	
 	public Losango(double ladoA, double ladoB, double diagonalMaior, double diagonalMenor, String nome) {
-		super();
+		super(nome);
 		this.ladoA = ladoA;
 		this.ladoB = ladoB;
 		this.diagonalMaior = diagonalMaior;
 		this.diagonalMenor = diagonalMenor;
-		this.nome = nome;
 	}
 
 
@@ -60,26 +59,17 @@ public class Losango {
 	public void setDiagonalMenor(double diagonalMenor) {
 		this.diagonalMenor = diagonalMenor;
 	}
-
-
-	public String getNome() {
-		return nome;
-	}
-
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 	
 	
-	
-	public double calcularArea(double diagonalMaior, double diagonalMenor) {
+	public double calcularArea() {
 		return (diagonalMaior * diagonalMenor) / 2;
 	}
 	
 	
-	public double calcularPerimetro(double ladoA, double ladoB) {
+	public double calcularPerimetro() {
 		return  (ladoA * 2) + (ladoB * 2);
 	}
+
+
 	
 }

@@ -5,7 +5,7 @@ public class TrianguloRetangulo extends Triangulo {
 	private double altura;
 	
 	public TrianguloRetangulo(double base, double altura, String nome) {
-		super();
+		super(nome);
 		this.base = base;
 		this.altura = altura;
 	}
@@ -30,25 +30,13 @@ public class TrianguloRetangulo extends Triangulo {
 		this.altura = altura;
 	}
 
-	public double calcularArea(double base, double altura) {
+	public double calcularArea() {
 		return (base * altura) / 2;
 	}
 	
 	
-	public double calcularPerimetro(double raio) {
+	public double calcularPerimetro() {
 		return base + (altura * 2);
 	}
 
-	@Override
-	public double calcularPerimetro(double ladoA, double ladoB) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public double calcularArea(double raio) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
 }

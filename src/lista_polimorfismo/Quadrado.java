@@ -4,7 +4,7 @@ public class Quadrado extends FormasGeometricas{
 	private double lado;
 	
 	public Quadrado(double lado, String nome) {
-		super();
+		super(nome);
 		this.lado = lado;
 	}
 
@@ -22,27 +22,16 @@ public class Quadrado extends FormasGeometricas{
 
 
 	@Override
-	public double calcularArea(double lado) {
-		return lado * lado;
+	public double calcularArea() {
+		return this.lado * this.lado;
 	}
 	
 	
 	@Override
-	public double calcularPerimetro(double lado) {
-		return lado * 4;
+	public double calcularPerimetro() {
+		return this.lado * 4;
 	}
 
-	@Override
-	public double calcularArea(double base, double altura) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public double calcularPerimetro(double ladoA, double ladoB) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
+	
 	
 }

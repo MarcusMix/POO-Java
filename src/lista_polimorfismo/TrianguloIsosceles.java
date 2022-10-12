@@ -5,7 +5,7 @@ public class TrianguloIsosceles extends Triangulo {
 	private double altura;
 	
 	public TrianguloIsosceles(double base, double altura, String nome) {
-		super();
+		super(nome);
 		this.base = base;
 		this.altura = altura;
 	}
@@ -33,25 +33,15 @@ public class TrianguloIsosceles extends Triangulo {
 
 
 	@Override
-	public double calcularArea(double base, double altura) {
-		return (base * altura) / 2;
+	public double calcularArea() {
+		return (this.base * this.altura);
 	}
 
 	@Override
-	public double calcularPerimetro(double base, double altura) {
-		return base + (altura * 2);
+	public double calcularPerimetro() {
+		return (this.base * 2) + (Math.hypot(this.base, this.altura) * 2);
 	}
 
-	@Override
-	public double calcularArea(double raio) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
-	@Override
-	public double calcularPerimetro(double raio) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
 }

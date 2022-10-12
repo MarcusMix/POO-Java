@@ -22,14 +22,9 @@ public abstract class  FormasGeometricas {
 	}
 
 
-	public abstract double calcularArea(double raio);
+	public abstract double calcularArea();
 	
-	public abstract double calcularArea(double base, double altura);
-	
-	
-	public abstract double calcularPerimetro(double raio) ;
-	
-	public abstract double calcularPerimetro(double ladoA, double ladoB) ;
+	public abstract double calcularPerimetro() ;
 	
 	
 }

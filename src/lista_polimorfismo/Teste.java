@@ -1,20 +1,66 @@
 package lista_polimorfismo;
 
+import java.text.DecimalFormat;
+import java.util.Random;
+
 public class Teste {
 
 	public static void main(String[] args) {
-		String[] array = new String[6];
 		
-		Quadrado q = new Quadrado(1, "Quadradão");
-		Circulo c = new Circulo(1, "Circuluzinho");
-		Retangulo r = new Retangulo(1, 2, "Retanguloso");
-		Losango l = new Losango(1, 2, 10, 20, "Losangulo");
+		FormasGeometricas[] array = new FormasGeometricas[7];
+		Random gerador = new Random();
+		DecimalFormat df = new DecimalFormat("0.00");
 		
-//		String [] array = {q, c, r, l, l, q, c};
 		
 		for(int i = 0; i > array.length; i++) {
-			System.out.println(array[i].getClass().getName());
+			int opcao = gerador.nextInt(6);
+			switch(opcao) {
+				case 0: {
+					Quadrado quadrado = new Quadrado(gerador.nextInt(9)+1, "Quadrado");
+					array[i] = quadrado;
+					break;
+				}
+				case 1: {
+					Circulo circulo = new Circulo(gerador.nextInt(9)+1, "Circulo");
+					array[i] = circulo;
+					break;
+				}
+				case 2: {
+					Losango losango = new Losango(gerador.nextInt(9)+1,gerador.nextInt(9)+1, gerador.nextInt(9)+1, gerador.nextInt(9)+1,"Losango");
+					array[i] = losango;
+					break;
+				}
+				case 3: {
+					TrianguloEquilatero trianguloEquilatero = new TrianguloEquilatero(gerador.nextInt(9)+1, "Triangulo Equilatero");
+					array[i] = trianguloEquilatero;
+					break;
+				}
+				case 4: {
+					TrianguloIsosceles trianguloIsosceles = new TrianguloIsosceles(gerador.nextInt(9)+1,gerador.nextInt(9)+1 ,"Triangulo Isosceles");
+					array[i] = trianguloIsosceles;
+					break;
+				}
+				case 5: {
+					TrianguloRetangulo trianguloRetangulo = new TrianguloRetangulo(gerador.nextInt(9)+1,gerador.nextInt(9)+1,"Triangulo Isosceles");
+					array[i] = trianguloRetangulo;
+					break;
+				}
+				case 6: {
+					Retangulo retangulo = new Retangulo(gerador.nextInt(9)+1,gerador.nextInt(9)+1, "Retangulo");
+					array[i] = retangulo;
+					break;
+				}
+				
+			}
+			
+		}
+		for(int i = 0; i < array.length; i++) {
+			System.out.println("\nNome da Figura: " + array[i].getNome());
+			System.out.println("Área da Figura: " + df.format(array[i].calcularArea()));
+			System.out.println("Perímetro da Figura: " + df.format(array[i].calcularPerimetro()));
+			System.out.println("---------------------");
 		}
 	}
-
 }
+
+

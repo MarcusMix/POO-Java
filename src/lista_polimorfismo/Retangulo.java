@@ -1,11 +1,11 @@
 package lista_polimorfismo;
 
-public class Retangulo extends FormasGeometricas{
+public class Retangulo extends FormasGeometricas {
 	private double ladoA;
 	private double ladoB;
 	
 	public Retangulo(double ladoA, double ladoB, String nome) {
-		super();
+		super(nome);
 		this.ladoA = ladoA;
 		this.ladoB = ladoB;
 	}
@@ -32,26 +32,16 @@ public class Retangulo extends FormasGeometricas{
 
 	
 	@Override
-	public double calcularArea(double ladoA, double ladoB) {
+	public double calcularArea() {
 		return ladoA * ladoB;
 	}
 	
 
 	@Override
-	public double calcularPerimetro(double ladoA, double ladoB) {
+	public double calcularPerimetro() {
 		return  ladoA * ladoB;
 	}
 
-	@Override
-	public double calcularArea(double raio) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public double calcularPerimetro(double raio) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 	
 }
