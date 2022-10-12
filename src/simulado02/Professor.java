@@ -3,8 +3,8 @@ package simulado02;
 public class Professor extends Pessoa{
 	private String disciplina;
 
-	public Professor(String nome, int idade, String disciplina) {
-		super(nome, idade);
+	public Professor(String nome, int idade, Endereco endereco, String disciplina) {
+		super(nome, idade, endereco);
 		this.disciplina = disciplina;
 	}
 

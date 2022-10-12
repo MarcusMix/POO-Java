@@ -3,11 +3,13 @@ package simulado02;
 public abstract class Pessoa {
 	private String nome;
 	private int idade;
+	private Endereco endereco;
 	
-	public Pessoa(String nome, int idade) {
+	public Pessoa(String nome, int idade, Endereco endereco) {
 		super();
 		this.nome = nome;
 		this.idade = idade;
+		this.endereco = endereco;
 	}
 
 	public Pessoa() {
@@ -29,6 +31,13 @@ public abstract class Pessoa {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 	
 }
