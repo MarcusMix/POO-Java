@@ -49,6 +49,14 @@ public class Escola {
 	public void setEnderecoEscola(Endereco enderecoEscola) {
 		this.enderecoEscola = enderecoEscola;
 	}
+
+	
+
+//	public String[] contabilizarAlunos() {
+//		return this.getTurmas().;
+//		
+//	}
+
 	
 	
 }

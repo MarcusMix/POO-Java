@@ -47,6 +47,12 @@ public class Executavel {
 		Escola escola = new Escola("Escola Básica das Meninas de Florianópolis", "3232-3232", turmas, end13);
 		
 		
+		//3-A
+//		escola.contabilizarAlunos();
+		
+		//3-B
+//		escola.localizarRegente();
+		
 	}
 
 }

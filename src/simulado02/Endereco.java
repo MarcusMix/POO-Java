@@ -68,6 +68,8 @@ public class Endereco {
 				"\nCidade: " + getCidade() + 
 				"\nEstado: " + getEstado();
 	}
+
+	
 	
 	
 	
