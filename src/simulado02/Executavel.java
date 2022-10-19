@@ -48,11 +48,30 @@ public class Executavel {
 		
 		
 		//3-A
-//		escola.contabilizarAlunos();
-		
+		escola.contabilizarAlunos();
+		System.out.println("\n-------Versão Professor--------------------");
 		//3-B
-//		escola.localizarRegente();
+		escola.localizarRegente("Pires");
+		System.out.println("\n-------Versão Marcus--------------------");
+		escola.localizarRegente2("Zeca");
 		
+		//3-C
+		System.out.println("\n-------Versão Professor--------------------");
+		escola.listarAlunasPorSerie(8);
+		
+		System.out.println("\n-------Versão Marcus--------------------");
+		escola.listarAlunasPorSerie2(7);
+		
+		System.out.println("\n-------Versão Professor--------------------");
+		//3-D
+		escola.identificarRegenteMaisNovo();
+		
+		//3-E
+		System.out.println("\n-------Versão Professor--------------------");
+		escola.listarAlunasPorCidade("PALHOÇA");
+		
+		System.out.println("\n-------Versão Marcus--------------------");
+		escola.listarAlunasPorCidade2("FLORIANÓPOLIS");
 	}
 
 }

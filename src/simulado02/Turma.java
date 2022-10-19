@@ -39,6 +39,31 @@ public class Turma {
 	public void setAlunos(Aluno[] alunos) {
 		this.alunos = alunos;
 	}
+
+	public void localizarRegente(String nome) {
+		if(this.getRegente().getNome().equals(nome)) {
+			System.out.println("Endereço do Regente: " + nome);
+			System.out.println(this.getRegente().getEndereco());
+		}
+		
+	}
+
+	public void listarAlunasPorSerie() {
+		System.out.println("Alunas da série: " + this.getSerie());
+		for(int i = 0; i < this.getAlunos().length; i++) {
+			System.out.println(this.getAlunos()[i].getNome());
+		}
+		
+	}
+
+	public void listarAlunasPorCidade(String cidade) {
+		for(int i = 0; i < this.getAlunos().length; i++) {
+			if(this.getAlunos()[i].getEndereco().getCidade().equals(cidade)) {
+				System.out.println(this.getAlunos()[i].getNome());
+			}
+		}
+		
+	}
 	
 	
 }
