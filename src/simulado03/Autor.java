@@ -44,10 +44,12 @@ public class Autor {
 
 	@Override
 	public String toString() {
-		return "Nome: " + this.getNome() +
+		return "\nNome: " + this.getNome() +
 				"\nData de Nascimento: " + this.getDataNascimento() +
 				"\nEndereco do Autor: " + this.getEnderecoAutor();
 	}
+
+
 	
 	
 	

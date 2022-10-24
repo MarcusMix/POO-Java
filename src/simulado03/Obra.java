@@ -70,15 +70,6 @@ public abstract class Obra {
 				"\nData de Publicação: " + this.getDataPublicacao() +
 				"\nAuto: " + this.getAutor();
 	}
-
-//
-//	public void identificarObraAntiga() {
-//		String obraMaisAntiga = obras[0]; 
-//		for(int i = 0; i < this.getListaObras().length; i++) {
-//			
-//		}
-//		
-//	}
-//	
+	
 	
 }

@@ -22,7 +22,7 @@ public class Executavel {
 		LocalDate dataPub8 = LocalDate.of(1941, 07, 28);
 		
 		
-		Endereco end1 = new Endereco("Rua das Maças", 100, "Ingleses", "Florianópolis", "SC");
+		Endereco end1 = new Endereco("Rua das Maças", 100, "Ingleses", "FLORIANÓPOLIS", "SC");
 		Endereco end2 = new Endereco("RUA DAS LARANJAS", 200, "ARIRIU","PALHOÇA","SANTA CATARINA");
 		Endereco end3 = new Endereco("RUA DAS UVAS", 300,"PEDRA BRANCA","PALHOÇA","SANTA CATARINA");
 		Endereco end4 = new Endereco("RUA DAS MELANCIAS", 400,"ESTREITO","FLORIANÓPOLIS","SANTA CATARINA");
@@ -54,10 +54,30 @@ public class Executavel {
 		
 //		3-A
 		biblioteca.contabilizarObras();
+		System.out.println("---------------------------------");
 		
 //		3-B
-//		biblioteca.identificarObraAntiga();
+		biblioteca.identificarObraAntiga();
+		System.out.println("---------------------------------");
 		
+//		3-C
+		biblioteca.identificarAutorMaisNovo();
+		System.out.println("---------------------------------");
+		
+//		3-D
+		biblioteca.diferencaAnosAutores();		
+		System.out.println("---------------------------------");
+		
+//		3-E
+		biblioteca.localizarEnderecoAutor("Osvald Andrade");
+		System.out.println("---------------------------------");
+		biblioteca.localizarEnderecoAutor("Cecilia Meireles");
+		System.out.println("---------------------------------");
+		
+//		3-F
+		biblioteca.listarAutoresCidades("FLORIANÓPOLIS");
+		System.out.println("---------------------------------");
+		biblioteca.listarAutoresCidades("PALHOÇA");
 	}
 
 }
