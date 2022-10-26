@@ -68,7 +68,7 @@ public abstract class Obra {
 		return "\nTítulo: "+ this.getTitulo() +
 				"\nEdicao: " + this.getEdicao() + 
 				"\nData de Publicação: " + this.getDataPublicacao() +
-				"\nAuto: " + this.getAutor();
+				"\nAutor: " + this.getAutor();
 	}
 	
 	

@@ -69,15 +69,12 @@ public class Executavel {
 		System.out.println("---------------------------------");
 		
 //		3-E
-		biblioteca.localizarEnderecoAutor("Osvald Andrade");
-		System.out.println("---------------------------------");
 		biblioteca.localizarEnderecoAutor("Cecilia Meireles");
 		System.out.println("---------------------------------");
 		
 //		3-F
 		biblioteca.listarAutoresCidades("FLORIANÓPOLIS");
-		System.out.println("---------------------------------");
-		biblioteca.listarAutoresCidades("PALHOÇA");
+
 	}
 
 }

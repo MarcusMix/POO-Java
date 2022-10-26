@@ -1,7 +1,10 @@
 package simulado03;
 
+import java.lang.reflect.Array;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
@@ -50,10 +53,9 @@ public class Biblioteca {
 	}
 
 	public void identificarObraAntiga() {
-		LocalDate obraMaisVelha = this.getListaObras()[0].getDataPublicacao();
-		Obra obraMaisVelha1 = listaObras[0];
+		Obra obraMaisVelha1 = this.getListaObras()[0];
 		for(int i = 0; i < this.getListaObras().length; i++) {
-			if(this.getListaObras()[i].getDataPublicacao().isBefore(obraMaisVelha)) {
+			if(this.getListaObras()[i].getDataPublicacao().isBefore(obraMaisVelha1.getDataPublicacao())) {
 				obraMaisVelha1 = this.getListaObras()[i];
 			}
 		}
@@ -61,68 +63,62 @@ public class Biblioteca {
 	}
 
 	public void identificarAutorMaisNovo() {
-		LocalDate autorMaisNovo = this.getListaObras()[0].getAutor().getDataNascimento();
+		Autor autorMaisNovo = this.getListaObras()[0].getAutor();
 		Autor autorMaisNovo1 = this.getListaObras()[0].getAutor();
 		for(int i = 0; i < this.getListaObras().length; i++) {
-			if(this.getListaObras()[i].getAutor().getDataNascimento().isAfter(autorMaisNovo)) {
-				autorMaisNovo1 = this.getListaObras()[i].getAutor();
+			if(this.getListaObras()[i].getAutor().getDataNascimento().isAfter(autorMaisNovo.getDataNascimento())) {
+				autorMaisNovo = this.getListaObras()[i].getAutor();
 			}
 		}
-		System.out.println("\nAutor mais novo: " + autorMaisNovo1);
+		System.out.println("\nAutor mais novo: " + autorMaisNovo);
 	}
 
 	public void diferencaAnosAutores() {
-		LocalDate autorMaisNovo = this.getListaObras()[0].getAutor().getDataNascimento();
-		String autorMaisNovo1 = this.getListaObras()[0].getAutor().getNome();
+		Autor autorMaisNovo = this.getListaObras()[0].getAutor();
 		for(int i = 0; i < this.getListaObras().length; i++) {
-			if(this.getListaObras()[i].getAutor().getDataNascimento().isAfter(autorMaisNovo)) {
-				autorMaisNovo1 = this.getListaObras()[i].getAutor().getNome();
+			if(this.getListaObras()[i].getAutor().getDataNascimento().isAfter(autorMaisNovo.getDataNascimento())) {
+				autorMaisNovo = this.getListaObras()[i].getAutor();
 			}
 		}
-		System.out.println("\nAutor mais novo: " + autorMaisNovo1);
+		System.out.println("\nAutor mais novo: " + autorMaisNovo.getNome());
 		
-		LocalDate autorMaisVelho = this.getListaObras()[0].getAutor().getDataNascimento();
-		String autorMaisVelho1 = this.getListaObras()[0].getAutor().getNome();
+
+		Autor autorMaisVelho = this.getListaObras()[0].getAutor();
 		for(int i = 0; i < this.getListaObras().length; i++) {
-			if(this.getListaObras()[i].getAutor().getDataNascimento().isBefore(autorMaisVelho)) {
-				autorMaisVelho1 = this.getListaObras()[i].getAutor().getNome();
+			if(this.getListaObras()[i].getAutor().getDataNascimento().isBefore(autorMaisVelho.getDataNascimento())) {
+				autorMaisVelho = this.getListaObras()[i].getAutor();
 			}
 		}
+		System.out.println("\nAutor mais Velho: " + autorMaisVelho.getNome());
 		
-		DateTimeFormatter formatador  = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-//		autorMaisNovo.format(formatador);
-//		autorMaisVelho.format(formatador);
-		System.out.println("\nAutor mais Velho: " + autorMaisVelho1);
-//		LocalDate diferencaDias = autorMaisVelho.minus();
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy MM dd");
-//		LocalDate autorMaisVelho2 = LocalDate.parse(autorMaisVelho, formatter);
-//		LocalDate autorMaisNovo2 = LocalDate.parse(autorMaisNovo, formatter);
-//		long elapsedDays = ChronoUnit.DAYS.between(autorMaisVelho2, autorMaisNovo2);
-//		System.out.println("Diferença de dias entre os autores é de: " + (autorMaisVelho.format(formatador) - autorMaisNovo.format(formatador)));
-//		System.out.println(elapsedDays);
-	}
+		Period diferenca = Period.between(autorMaisVelho.getDataNascimento(), autorMaisNovo.getDataNascimento());
+		System.out.println("\n"+diferenca.getYears() + " anos");
+		System.out.println(diferenca.getMonths() + " meses");
+		System.out.println(diferenca.getDays() + " dias");
+	}		
 
 	public void localizarEnderecoAutor(String nome) {
 		Endereco endLocalizado = new Endereco();
+		String autorNome = "";
 		for(int i = 0; i < this.getListaObras().length; i++) {
 			if(this.getListaObras()[i].getAutor().getNome().equals(nome)) {
 				endLocalizado =  this.getListaObras()[i].getAutor().getEnderecoAutor();
+				autorNome = this.getListaObras()[i].getAutor().getNome();
 			}
 		}
-		System.out.println("Endereço do autor desejado: " + endLocalizado);
+		System.out.println("Endereço do(a) " + autorNome + ": ");
+		System.out.println(endLocalizado);
 	}
 
 	public void listarAutoresCidades(String cidade) {
 		System.out.println("Moram na cidade " +  cidade + " os seguintes autores: ");
+		int contador = 0;
 		for(int i = 0; i < this.getListaObras().length; i++) {
 			if(this.getListaObras()[i].getAutor().getEnderecoAutor().getCidade().equals(cidade)) {
 				System.out.println(getListaObras()[i].getAutor().getNome()); 
 			}
 		}
-	}
-	
-	
-	
+	}	
 }
 
 
