@@ -64,7 +64,6 @@ public class Biblioteca {
 
 	public void identificarAutorMaisNovo() {
 		Autor autorMaisNovo = this.getListaObras()[0].getAutor();
-		Autor autorMaisNovo1 = this.getListaObras()[0].getAutor();
 		for(int i = 0; i < this.getListaObras().length; i++) {
 			if(this.getListaObras()[i].getAutor().getDataNascimento().isAfter(autorMaisNovo.getDataNascimento())) {
 				autorMaisNovo = this.getListaObras()[i].getAutor();
@@ -92,7 +91,7 @@ public class Biblioteca {
 		System.out.println("\nAutor mais Velho: " + autorMaisVelho.getNome());
 		
 		Period diferenca = Period.between(autorMaisVelho.getDataNascimento(), autorMaisNovo.getDataNascimento());
-		System.out.println("\n"+diferenca.getYears() + " anos");
+		System.out.println("\nDiferença entre os autores: \n"+diferenca.getYears() + " anos");
 		System.out.println(diferenca.getMonths() + " meses");
 		System.out.println(diferenca.getDays() + " dias");
 	}		
@@ -112,7 +111,6 @@ public class Biblioteca {
 
 	public void listarAutoresCidades(String cidade) {
 		System.out.println("Moram na cidade " +  cidade + " os seguintes autores: ");
-		int contador = 0;
 		for(int i = 0; i < this.getListaObras().length; i++) {
 			if(this.getListaObras()[i].getAutor().getEnderecoAutor().getCidade().equals(cidade)) {
 				System.out.println(getListaObras()[i].getAutor().getNome()); 
