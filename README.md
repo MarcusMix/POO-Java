@@ -21,11 +21,11 @@ Aqui será o repositório de todos os códigos de POO em Java, com exercícios, 
 
 **Back-end:** 
 [![Java 8 pt-br](https://img.shields.io/badge/Java-8-blue)](https://www.java.com/pt-BR/download/help/java8_pt-br.html)
-  <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" width="40px" />
+  <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" width="30px" />
 
 **IDE:**  
 [![Eclipse](https://img.shields.io/badge/Eclipse-2022-green)](https://www.eclipse.org/downloads/)
-   <img src="https://user-images.githubusercontent.com/11943860/46922575-7017cf80-cfe1-11e8-845a-0cd198fb546c.png" width="40px" />
+   <img src="https://user-images.githubusercontent.com/11943860/46922575-7017cf80-cfe1-11e8-845a-0cd198fb546c.png" width="30px" />
     
 </div>
 
@@ -34,7 +34,7 @@ Aqui será o repositório de todos os códigos de POO em Java, com exercícios, 
 
 <div style="display: inline_block">
     <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" width="40px" />
-   <img src="https://user-images.githubusercontent.com/11943860/46922575-7017cf80-cfe1-11e8-845a-0cd198fb546c.png" width="40px" />
+   <img src="[https://user-images.githubusercontent.com/11943860/46922575-7017cf80-cfe1-11e8-845a-0cd198fb546c.png](https://imgur.com/a/SRGeRt9)" width="400px" />
 </div>
 
 
