@@ -69,7 +69,4 @@ public class Endereco {
 				"\nEstado: " +  this.getEstado();
 	}
 
-
-	
-	
 }
