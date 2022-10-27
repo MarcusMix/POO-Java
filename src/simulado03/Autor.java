@@ -49,9 +49,5 @@ public class Autor {
 				"\nData de Nascimento: " + this.getDataNascimento().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) +
 				"\nEndereco do Autor: " + this.getEnderecoAutor();
 	}
-
-
-	
-	
 	
 }
