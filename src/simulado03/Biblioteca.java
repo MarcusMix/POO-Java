@@ -1,4 +1,4 @@
-package simulado03;
+ package simulado03;
 
 import java.lang.reflect.Array;
 import java.time.Duration;
@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.HashSet;
 
 public class Biblioteca {
 	private String nome;
@@ -115,6 +116,19 @@ public class Biblioteca {
 			if(this.getListaObras()[i].getAutor().getEnderecoAutor().getCidade().equals(cidade)) {
 				System.out.println(getListaObras()[i].getAutor().getNome()); 
 			}
+		}
+	}
+
+	public void listarAutoresCidades2(String cidade) {
+		HashSet<Autor> listaAutores = new HashSet<Autor>();
+		for(int i = 0; i < this.getListaObras().length; i++) {
+			if(this.getListaObras()[i].getAutor().getEnderecoAutor().getCidade().equals(cidade)) {
+				listaAutores.add(this.getListaObras()[i].getAutor());
+			}
+		}
+		System.out.println("\nLista de autores que moram na cidade de " + cidade);
+		for(Autor autor : listaAutores) {
+			System.out.println(autor.getNome());
 		}
 	}	
 }

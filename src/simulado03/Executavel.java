@@ -82,6 +82,9 @@ public class Executavel {
 		
 		//3-F
 		biblioteca.listarAutoresCidades("FLORIANÓPOLIS");
+		
+		//forma alternativa (não duplica o resultado)
+		biblioteca.listarAutoresCidades2("FLORIANÓPOLIS");
 
 	}
 
