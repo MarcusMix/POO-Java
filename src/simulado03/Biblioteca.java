@@ -91,7 +91,7 @@ public class Biblioteca {
 		System.out.println("\nAutor mais Velho: " + autorMaisVelho.getNome());
 		
 		Period diferenca = Period.between(autorMaisVelho.getDataNascimento(), autorMaisNovo.getDataNascimento());
-		System.out.println("\nDiferença entre os autores: \n"+diferenca.getYears() + " anos");
+		System.out.println("\nDiferença entre os autores: \n" + diferenca.getYears() + " anos");
 		System.out.println(diferenca.getMonths() + " meses");
 		System.out.println(diferenca.getDays() + " dias");
 	}		
