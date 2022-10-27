@@ -72,5 +72,4 @@ public abstract class Obra {
 				"\nAutor: " + this.getAutor();
 	}
 	
-	
 }
