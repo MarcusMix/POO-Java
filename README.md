@@ -33,7 +33,8 @@ Aqui será o repositório de todos os códigos de POO em Java, com exercícios, 
 ## Screenshots
 
 <div style="display: inline_block">
-   <img src="https://i.imgur.com/ZPQYmM8.png" width="800px" style="border-radius: 10px;"/>
+   <img src="https://i.imgur.com/ZPQYmM8.png" width="700px"/>
+   <img src="https://i.imgur.com/eAH1Qkc.png" width="700px"/>
 </div>
 
 
