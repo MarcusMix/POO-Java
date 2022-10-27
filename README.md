@@ -19,7 +19,7 @@ Aqui será o repositório de todos os códigos de POO em Java, com exercícios, 
 
 <div style="display: inline_block">
 
-**Back-end:** 
+**Back-end:** <br>
 [![Java 8 pt-br](https://img.shields.io/badge/Java-8-blue)](https://www.java.com/pt-BR/download/help/java8_pt-br.html)
   <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" width="30px" />
 
