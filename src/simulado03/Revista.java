@@ -12,6 +12,4 @@ public class Revista extends Obra {
 		super(titulo, edicao, dataPublicacao, autor);
 	}
 	
-
-	
 }
