@@ -1,6 +1,7 @@
 package simulado03;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public abstract class Obra {
 	private String titulo;
@@ -67,7 +68,7 @@ public abstract class Obra {
 	public String toString() {
 		return "\nTítulo: "+ this.getTitulo() +
 				"\nEdicao: " + this.getEdicao() + 
-				"\nData de Publicação: " + this.getDataPublicacao() +
+				"\nData de Publicação: " + this.getDataPublicacao().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) +
 				"\nAutor: " + this.getAutor();
 	}
 	

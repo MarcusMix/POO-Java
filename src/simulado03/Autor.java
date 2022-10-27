@@ -1,6 +1,7 @@
 package simulado03;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Autor {
 	private String nome;
@@ -45,7 +46,7 @@ public class Autor {
 	@Override
 	public String toString() {
 		return "\nNome: " + this.getNome() +
-				"\nData de Nascimento: " + this.getDataNascimento() +
+				"\nData de Nascimento: " + this.getDataNascimento().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) +
 				"\nEndereco do Autor: " + this.getEnderecoAutor();
 	}
 
