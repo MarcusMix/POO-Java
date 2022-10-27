@@ -34,7 +34,7 @@ Aqui será o repositório de todos os códigos de POO em Java, com exercícios, 
 
 <div style="display: inline_block">
     <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" width="40px" />
-   <img src="[https://user-images.githubusercontent.com/11943860/46922575-7017cf80-cfe1-11e8-845a-0cd198fb546c.png](https://imgur.com/a/SRGeRt9)" width="400px" />
+   <img src="https://imgur.com/a/SRGeRt9" width="400px" />
 </div>
 
 
