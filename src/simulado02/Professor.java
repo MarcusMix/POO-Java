@@ -1,6 +1,6 @@
 package simulado02;
 
-public class Professor extends Pessoa{
+public class Professor extends Pessoa {
 	private String disciplina;
 
 	public Professor(String nome, int idade, Endereco endereco, String disciplina) {
@@ -19,5 +19,5 @@ public class Professor extends Pessoa{
 	public void setDisciplina(String disciplina) {
 		this.disciplina = disciplina;
 	}
-	
+
 }
