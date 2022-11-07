@@ -10,5 +10,4 @@ public class Furadeira extends FerramentasEletricas {
 			double fatorDeDesgaste) {
 		super(modelo, fabricante, rpm, potencia, tensao, peso, fatorDeDesgaste);
 	}
-
 }
