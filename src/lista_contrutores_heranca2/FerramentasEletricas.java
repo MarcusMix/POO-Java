@@ -1,8 +1,6 @@
 package lista_contrutores_heranca2;
 
-public class FerramentasEletricas {
-	private String modelo;
-	private String fabricante;
+public class FerramentasEletricas extends Ferramenta {
 	private double rpm;
 	private double potencia;
 	private double tensao;
@@ -11,9 +9,7 @@ public class FerramentasEletricas {
 	
 	public FerramentasEletricas(String modelo, String fabricante, double rpm, double potencia, double tensao,
 			double peso, double fatorDeDesgaste) {
-		super();
-		this.modelo = modelo;
-		this.fabricante = fabricante;
+		super(modelo, fabricante);
 		this.rpm = rpm;
 		this.potencia = potencia;
 		this.tensao = tensao;
@@ -23,22 +19,6 @@ public class FerramentasEletricas {
 
 	public FerramentasEletricas() {
 		super();
-	}
-
-	public String getModelo() {
-		return modelo;
-	}
-
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
-
-	public String getFabricante() {
-		return fabricante;
-	}
-
-	public void setFabricante(String fabricante) {
-		this.fabricante = fabricante;
 	}
 
 	public double getRpm() {
