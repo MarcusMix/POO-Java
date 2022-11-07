@@ -5,17 +5,38 @@ public class FerramentaManual {
 	private String fabricante;
 	private String tipo;
 	private double tamanho;
-	
-	public FerramentaManual(String modelo, String fabricante, String tipo, double tamanho) {
+	private double peso;
+	private double fatorDeDesgaste;
+
+	public FerramentaManual() {
+		super();
+	}
+
+	public FerramentaManual(String modelo, String fabricante, String tipo, double tamanho, double peso,
+			double fatorDeDesgaste) {
 		super();
 		this.modelo = modelo;
 		this.fabricante = fabricante;
 		this.tipo = tipo;
 		this.tamanho = tamanho;
+		this.peso = peso;
+		this.fatorDeDesgaste = fatorDeDesgaste;
+	}
+	
+	public double getPeso() {
+		return peso;
 	}
 
-	public FerramentaManual() {
-		super();
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public double getFatorDeDesgaste() {
+		return fatorDeDesgaste;
+	}
+
+	public void setFatorDeDesgaste(double fatorDeDesgaste) {
+		this.fatorDeDesgaste = fatorDeDesgaste;
 	}
 
 	public String getModelo() {
