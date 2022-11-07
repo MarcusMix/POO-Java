@@ -6,14 +6,19 @@ public class FerramentasEletricas {
 	private double rpm;
 	private double potencia;
 	private double tensao;
+	private double peso;
+	private double fatorDeDesgaste;
 	
-	public FerramentasEletricas(String modelo, String fabricante, double rpm, double potencia, double tensao) {
+	public FerramentasEletricas(String modelo, String fabricante, double rpm, double potencia, double tensao,
+			double peso, double fatorDeDesgaste) {
 		super();
 		this.modelo = modelo;
 		this.fabricante = fabricante;
 		this.rpm = rpm;
 		this.potencia = potencia;
 		this.tensao = tensao;
+		this.peso = peso;
+		this.fatorDeDesgaste = fatorDeDesgaste;
 	}
 
 	public FerramentasEletricas() {
@@ -59,5 +64,20 @@ public class FerramentasEletricas {
 	public void setTensao(double tensao) {
 		this.tensao = tensao;
 	}
-	
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public double getFatorDeDesgaste() {
+		return fatorDeDesgaste;
+	}
+
+	public void setFatorDeDesgaste(double fatorDeDesgaste) {
+		this.fatorDeDesgaste = fatorDeDesgaste;
+	}
 }
