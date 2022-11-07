@@ -6,7 +6,7 @@ public class Alicate extends FerramentaManual {
 		super();
 	}
 
-	public Alicate(String modelo, String fabricante, String tipo, double tamanho) {
-		super(modelo, fabricante, tipo, tamanho);
+	public Alicate(String modelo, String fabricante, String tipo, double tamanho, double peso, double fatorDeDesgaste) {
+		super(modelo, fabricante, tipo, tamanho, peso, fatorDeDesgaste);
 	}
 }

@@ -6,7 +6,8 @@ public class Lixadeira extends FerramentasEletricas {
 		super();
 	}
 
-	public Lixadeira(String modelo, String fabricante, double rpm, double potencia, double tensao) {
-		super(modelo, fabricante, rpm, potencia, tensao);
+	public Lixadeira(String modelo, String fabricante, double rpm, double potencia, double tensao, double peso,
+			double fatorDeDesgaste) {
+		super(modelo, fabricante, rpm, potencia, tensao, peso, fatorDeDesgaste);
 	}
 }

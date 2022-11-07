@@ -6,7 +6,8 @@ public class Parafusadeira extends FerramentasEletricas {
 		super();
 	}
 
-	public Parafusadeira(String modelo, String fabricante, double rpm, double potencia, double tensao) {
-		super(modelo, fabricante, rpm, potencia, tensao);
-	}	
+	public Parafusadeira(String modelo, String fabricante, double rpm, double potencia, double tensao, double peso,
+			double fatorDeDesgaste) {
+		super(modelo, fabricante, rpm, potencia, tensao, peso, fatorDeDesgaste);
+	}
 }

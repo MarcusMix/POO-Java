@@ -6,7 +6,7 @@ public class Serrote extends FerramentaManual {
 		super();
 	}
 
-	public Serrote(String modelo, String fabricante, String tipo, double tamanho) {
-		super(modelo, fabricante, tipo, tamanho);
+	public Serrote(String modelo, String fabricante, String tipo, double tamanho, double peso, double fatorDeDesgaste) {
+		super(modelo, fabricante, tipo, tamanho, peso, fatorDeDesgaste);
 	}
 }
